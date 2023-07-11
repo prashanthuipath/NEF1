@@ -188,7 +188,7 @@
                   <InArgument x:TypeArguments="x:Int32">[Math.Abs(QueueTotalAmount)-IntTotalIncome]</InArgument>
                 </Assign.Value>
               </Assign>
-              <If Condition="[Math.Abs(CheckTotalIncome)&gt;10]" DisplayName="TOTALINCOME If" sap:VirtualizedContainerService.HintSize="510,676" sap2010:WorkflowViewState.IdRef="If_16">
+              <If Condition="[Math.Abs(CheckTotalIncome)&gt;50]" DisplayName="TOTALINCOME If" sap:VirtualizedContainerService.HintSize="510,676" sap2010:WorkflowViewState.IdRef="If_16">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>

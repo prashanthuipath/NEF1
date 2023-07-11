@@ -4,7 +4,7 @@
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_UiElementOutput" Type="InArgument(ui:UiElement)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>658,2040</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>658,2145.3333333333335</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,20 +111,20 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Refund " sap:VirtualizedContainerService.HintSize="668,1975.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_66">
+  <Sequence DisplayName="Refund " sap:VirtualizedContainerService.HintSize="668,2080.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_66">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Refund  Log Message" sap:VirtualizedContainerService.HintSize="606,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Entering Refund page..&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Refund  Use Application/Browser" sap:VirtualizedContainerService.HintSize="606,1495.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InUiElement="[in_UiElementOutput]" ScopeGuid="11521f4c-1821-4d99-b655-8d7060e00c15" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Refund  Use Application/Browser" sap:VirtualizedContainerService.HintSize="606,1600.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InUiElement="[in_UiElementOutput]" ScopeGuid="11521f4c-1821-4d99-b655-8d7060e00c15" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Refund Do In Sequence" sap:VirtualizedContainerService.HintSize="572,1356" sap2010:WorkflowViewState.IdRef="Sequence_67">
+          <Sequence DisplayName="Refund Do In Sequence" sap:VirtualizedContainerService.HintSize="572,1461.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_67">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="ITRefund" />
               <Variable x:TypeArguments="x:Int32" Name="IntRefund" />
@@ -143,9 +143,9 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NMouseScroll>
-            <uix:NGetText DelayAfter="1" DelayBefore="1" DisplayName="Get Text '₹ 30,050'" sap:VirtualizedContainerService.HintSize="510,54" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="11521f4c-1821-4d99-b655-8d7060e00c15" TextString="[ITRefund]" Version="V3">
+            <uix:NGetText DelayAfter="1" DelayBefore="1" DisplayName="Get Text  IT refund" sap:VirtualizedContainerService.HintSize="510,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="11521f4c-1821-4d99-b655-8d7060e00c15" TextString="[ITRefund]" Version="V3">
               <uix:NGetText.Target>
-                <uix:TargetAnchorable CvElementArea="83, 591, 1740, 127" CvTextArea="1668, 617, 118, 30" CvTextArgument="R 30,050" CvType="InputBox" DesignTimeRectangle="1445, 614, 342, 40" DesignTimeScaleFactor="1.5" FriendlyName="'₹ 30,050'" FullSelectorArgument="&lt;ctrl name='ITR2 Part B - TTI' role='document' /&gt;&lt;ctrl role='DIV' aastate='opaque' idx='68' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Part B - TTI' role='document' /&gt;&lt;ctrl role='DIV' aastate='opaque' automationid='' /&gt;" Guid="a7ec52c0-6317-46bd-a580-5ae4722c9fb0" ImageBase64="" InformativeScreenshot="54b2df96437dbcf33d8c8ff079602bba.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='Chrome_WidgetWin_1' title='ITR2 Part B - TTI' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                <uix:TargetAnchorable CvElementArea="83, 591, 1740, 127" CvTextArea="1668, 617, 118, 30" CvTextArgument="R 30,050" CvType="InputBox" DesignTimeRectangle="1445, 614, 342, 40" DesignTimeScaleFactor="1.5" FriendlyName="'₹ 30,050'" FullSelectorArgument="&lt;ctrl name='ITR2 Part B - TTI' role='document' /&gt;&lt;ctrl idx='2' name='17. Refund' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Part B - TTI' role='document' /&gt;&lt;ctrl role='DIV' aastate='opaque' automationid='' /&gt;" Guid="a7ec52c0-6317-46bd-a580-5ae4722c9fb0" ImageBase64="" InformativeScreenshot="54b2df96437dbcf33d8c8ff079602bba.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='Chrome_WidgetWin_1' title='ITR2 Part B - TTI' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CvElementArea="83, 591, 1740, 127" CvTextArea="140, 623, 145, 28" CvTextArgument="17. Refund" CvType="InputBox" DesignTimeRectangle="140, 614, 290, 46" ElementType="InputBox" FriendlyName="'17. Refund'" FullSelectorArgument="&lt;ctrl name='ITR2 Part B - TTI' role='document' /&gt;&lt;ctrl role='editable text' text='17. Refund' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Part B - TTI' role='document' /&gt;&lt;ctrl role='editable text' text='17. Refund' automationid='' /&gt;" ImageBase64="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" SearchSteps="Selector" />
@@ -155,7 +155,7 @@
               </uix:NGetText.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
