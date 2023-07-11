@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="in_UiElementOutput" Type="InArgument(ui:UiElement)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>567.3333333333334,2742.6666666666665</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>567.3333333333334,2806</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -109,20 +109,20 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Verification Sequence" sap:VirtualizedContainerService.HintSize="546,2678" sap2010:WorkflowViewState.IdRef="Sequence_69">
+  <Sequence DisplayName="Verification Sequence" sap:VirtualizedContainerService.HintSize="546,2741.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_69">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Verification  Log Message" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;verification and validation check page&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Verification Use Application/Browser" sap:VirtualizedContainerService.HintSize="484,2198" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InUiElement="[in_UiElementOutput]" ScopeGuid="e3f1194f-672c-4080-a333-627115a544be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Verification Use Application/Browser" sap:VirtualizedContainerService.HintSize="484,2261.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InUiElement="[in_UiElementOutput]" ScopeGuid="e3f1194f-672c-4080-a333-627115a544be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Verification  Do Sequence" sap:VirtualizedContainerService.HintSize="450,2058.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_68">
+          <Sequence DisplayName="Verification  Do Sequence" sap:VirtualizedContainerService.HintSize="450,2122" sap2010:WorkflowViewState.IdRef="Sequence_68">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="StrPlace" />
             </Sequence.Variables>
@@ -156,7 +156,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" DelayAfter="1" DelayBefore="1" Direction="Down" DisplayName="Verification Mouse Scroll" sap:VirtualizedContainerService.HintSize="334,139.33333333333334" sap2010:WorkflowViewState.IdRef="NMouseScroll_9" InteractionMode="HardwareEvents" MovementUnits="2" Version="V3">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" DelayAfter="1" DelayBefore="1" Direction="Down" DisplayName="Checkbox Verification Mouse Scroll" sap:VirtualizedContainerService.HintSize="388,139.33333333333334" sap2010:WorkflowViewState.IdRef="NMouseScroll_9" InteractionMode="HardwareEvents" MovementUnits="2" Version="V3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -190,68 +190,108 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NMouseScroll>
-            <uix:NGetText DelayAfter="1" DelayBefore="1" DisplayName="Get Text 'editable text Place*'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e3f1194f-672c-4080-a333-627115a544be" TextString="[StrPlace]" Version="V3">
-              <uix:NGetText.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="146, 644, 375, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'editable text Place*'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl name='Place*' role='editable text' aastate='focusable, editable, opaque, selectable text, singleline, autocomplete' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl name='Place*' role='editable text' aastate='focusable, editable, opaque, selectable text, singleline, autocomplete' automationid='' /&gt;" Guid="c846ca7d-762b-47dd-b3e6-135cd171acdb" ImageBase64="" InformativeScreenshot="59fe82597e267a314c85fa5d9145549b.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='Chrome_WidgetWin_1' title='ITR2 Preview and Submit your return' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="0.3" DelayBefore="0.3" DisplayName="Verification Type Place 'bengaluru'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="e3f1194f-672c-4080-a333-627115a544be" Text="Bengaluru" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="146, 494, 375, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'editable text Place*'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl name='Place*' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl name='Place*' role='editable text' automationid='' /&gt;" Guid="4e33540d-04ae-4097-bccd-98917ce330f4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAABBCAYAAAAwqAR0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJGSURBVHhe7dkxSiRRGIXRWcokTuJaTNydYCS4nDE17kyMOzCRHv7BKl7DXYB1PQdu0vW6w49H9a8LAPXEHuAHEHuAH0DsAX6AGPu3h8fL69395eXm9vL39x8zM/vmm15Pt6ffyVXsP06n/4fTD5mZ2TE2HZ+er65iL/RmZh2bnq/22M/Vfz34/vR8+Tyfv54C8J1Nr6fba8fXVzp77Ndb/XwBgONZg7/e7vfYr3/GutEDHNP0e2v5dH2zx357OAPguFLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6vsf+5eZ2f/h5Pn99CsCRTL+3lk/XN3vsX+/u9wPvT89fnwJwJNPvreXT9c0e+7eHx/3AFnw3fIBjmF6voZ9N1zd77Md6uzczs+NuvdWPq9h/nE6Cb2Z28E3Hp+erq9hv5uo/h9c/bc3M7Ptuej3dXl/drGLsAWhyufwDYhxukRpltscAAAAASUVORK5CYII=" InformativeScreenshot="c1b756352ca04b9ca2d3264ec3d5a4fe.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='Chrome_WidgetWin_1' title='ITR2 Preview and Submit your return' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="146, 601, 67, 32" ElementType="InputBox" FriendlyName="'Place*'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl role='editable text' aastate='opaque' text='Place*' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl role='editable text' aastate='opaque' text='Place*' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAkCAYAAADb0CfrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQqSURBVGhD7ZjNSxxJGIfzp8TDBkKEZUB2YPEi4kKMLAgiigcVEUWDBBVBVIwfqBgPorhGohKCFw/ix0EFyagkqGHVTUKimFk9qJhBVCaO7uBH5s383ukauis9lZ1152BSDxRtV79V0/V0Vb2FN0gTES1HgZajQMtRoOUo0HIUaDkKtBwFWo4CLUeBlqPgynKOjo4oNzeXampqyO/3G7XfBxY5y8vLFBcXZ1vS0tKot7eXDg8PjegQ11nOP2vr9MbhpE/zL4waK7Zy8vPzWYQoXV1dlJOTw89SU1NpZWXFaPEDyoEMmUAgQLOzs5SYmEilpaXk9Xq5/rrJ8f25TB+7/6CzvT2W8zbhVzp+uUDnHz20//QZ+ZZeGZFRyAGXl5fU1tZG8fHxtLq6ynXXTY7n8RP66/bPtHLzVnDW/EKrP93hK+5Rv9v2iOjzZ46NSg4YGxvjGFxBJDkQOT8/z7PM4XBwGyzN6elpfiZzenpKQ0NDlJWVxbGYoU1NTbQX/MIyZ2dnNDU1FV7qInZnZ8eI+AbBwfs/uGkjI4ulfMjJI7/7bwpcXBgBIaKWMzIywjEzMzN8bycHg8dehbiCggLq6enhgr9R19fXZxGEPiorK3lGlpWVcdvm5maWmp6eTm6324gMSWxsbLTEtrS0sCA5VoX3uYv3m62ycnp9x8H3MlHJwYtVV1dTUlISra+vc52dnI2NDSosLOQXN0vw+XxUUVFBGRkZtLu7y3XYywYHB3mwo6OjwY8amtIAG39KSgo1NDTwbAGYsU6nk1wuF7cVQAqShTk2Eqfv3tNbZyJt1z2ky+A7bd1/QGu/3eN9yMy/lnNwcEAdHR38vL6+Piwi2j0HfWMQm5ubfI/2eXl5VFxcHN7kBRDb3t5O2dnZ5PF46Pj4mEpKSqi8vJxOTk6MqBByrAqvay64pLLDMvybW7R293euN2MrR1WqqqosZ51IcvD15ubmLHuOKGY5uOIeAzPPMjtErLkvuZj7VhG4sP6WfA9s5cjnHJTh4WH+UfO0B3ZycMUGiaVSW1vLS2BxcZELlqWdHNU+JxCxdu8nysDAAO3v7xstrkbUG7KMnRz0AzH9/f2WfQHIy0oMuLOz86tYGREL8efn50Zt7IiJHJHu0Z8ZDB4SzHJUew7iMROQlZCmRSyy0vb2thEVO2IiB2ke/XR3d4f3EQx0YWGBU65ZDupFthofH7fMHmQ9iBAZSMSi79bWVs6eAiz3iYkJmpyc/Grp/1diIgcbNmYC+sJBDVkOVwhISEjgevOsQjwyEJ7LZxekfSESQEhdXR33kZmZye8qzlBoL5+hrkJM5AAMGFIwQLx0UVERLS0t8dfFb4gTtkA+IScnJ7Mk+b8AQD4hIxsiK2Jm/l+zBljkaKxoOQq0HAVajgItR4GWo0DLUaDlKNByIkL0BbRYhS8KKrlpAAAAAElFTkSuQmCC" SearchSteps="Selector" />
+                      <uix:Target CvTextArgument="Place *" CvType="Text" DesignTimeRectangle="146, 451, 67, 32" ElementType="InputBox" FriendlyName="'Place*'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl idx='9' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl automationid='' role='editable text' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAkCAYAAADb0CfrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQqSURBVGhD7ZjNSxxJGIfzp8TDBkKEZUB2YPEi4kKMLAgiigcVEUWDBBVBVIwfqBgPorhGohKCFw/ix0EFyagkqGHVTUKimFk9qJhBVCaO7uBH5s383ukauis9lZ1152BSDxRtV79V0/V0Vb2FN0gTES1HgZajQMtRoOUo0HIUaDkKtBwFWo4CLUeBlqPgynKOjo4oNzeXampqyO/3G7XfBxY5y8vLFBcXZ1vS0tKot7eXDg8PjegQ11nOP2vr9MbhpE/zL4waK7Zy8vPzWYQoXV1dlJOTw89SU1NpZWXFaPEDyoEMmUAgQLOzs5SYmEilpaXk9Xq5/rrJ8f25TB+7/6CzvT2W8zbhVzp+uUDnHz20//QZ+ZZeGZFRyAGXl5fU1tZG8fHxtLq6ynXXTY7n8RP66/bPtHLzVnDW/EKrP93hK+5Rv9v2iOjzZ46NSg4YGxvjGFxBJDkQOT8/z7PM4XBwGyzN6elpfiZzenpKQ0NDlJWVxbGYoU1NTbQX/MIyZ2dnNDU1FV7qInZnZ8eI+AbBwfs/uGkjI4ulfMjJI7/7bwpcXBgBIaKWMzIywjEzMzN8bycHg8dehbiCggLq6enhgr9R19fXZxGEPiorK3lGlpWVcdvm5maWmp6eTm6324gMSWxsbLTEtrS0sCA5VoX3uYv3m62ycnp9x8H3MlHJwYtVV1dTUlISra+vc52dnI2NDSosLOQXN0vw+XxUUVFBGRkZtLu7y3XYywYHB3mwo6OjwY8amtIAG39KSgo1NDTwbAGYsU6nk1wuF7cVQAqShTk2Eqfv3tNbZyJt1z2ky+A7bd1/QGu/3eN9yMy/lnNwcEAdHR38vL6+Piwi2j0HfWMQm5ubfI/2eXl5VFxcHN7kBRDb3t5O2dnZ5PF46Pj4mEpKSqi8vJxOTk6MqBByrAqvay64pLLDMvybW7R293euN2MrR1WqqqosZ51IcvD15ubmLHuOKGY5uOIeAzPPMjtErLkvuZj7VhG4sP6WfA9s5cjnHJTh4WH+UfO0B3ZycMUGiaVSW1vLS2BxcZELlqWdHNU+JxCxdu8nysDAAO3v7xstrkbUG7KMnRz0AzH9/f2WfQHIy0oMuLOz86tYGREL8efn50Zt7IiJHJHu0Z8ZDB4SzHJUew7iMROQlZCmRSyy0vb2thEVO2IiB2ke/XR3d4f3EQx0YWGBU65ZDupFthofH7fMHmQ9iBAZSMSi79bWVs6eAiz3iYkJmpyc/Grp/1diIgcbNmYC+sJBDVkOVwhISEjgevOsQjwyEJ7LZxekfSESQEhdXR33kZmZye8qzlBoL5+hrkJM5AAMGFIwQLx0UVERLS0t8dfFb4gTtkA+IScnJ7Mk+b8AQD4hIxsiK2Jm/l+zBljkaKxoOQq0HAVajgItR4GWo0DLUaDlKNByIkL0BbRYhS8KKrlpAAAAAElFTkSuQmCC" SearchSteps="Selector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
-              </uix:NGetText.Target>
-            </uix:NGetText>
-            <If Condition="[string.IsNullOrEmpty(StrPlace) = true]" DisplayName=" If Place Empty" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="If_1">
+              </uix:NTypeInto.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="376,310" sap2010:WorkflowViewState.IdRef="Sequence_70">
+            </uix:NTypeInto>
+            <ui:CommentOut DisplayName="Place Comment Out" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Place Ignored Activities" sap:VirtualizedContainerService.HintSize="450,258.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_72">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="0.3" DelayBefore="0.3" DisplayName="Verification Type Into 'editable text Place*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="e3f1194f-672c-4080-a333-627115a544be" Text="Bengaluru" Version="V3">
-                    <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="146, 494, 375, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'editable text Place*'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl name='Place*' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl name='Place*' role='editable text' automationid='' /&gt;" Guid="4e33540d-04ae-4097-bccd-98917ce330f4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAABBCAYAAAAwqAR0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJGSURBVHhe7dkxSiRRGIXRWcokTuJaTNydYCS4nDE17kyMOzCRHv7BKl7DXYB1PQdu0vW6w49H9a8LAPXEHuAHEHuAH0DsAX6AGPu3h8fL69395eXm9vL39x8zM/vmm15Pt6ffyVXsP06n/4fTD5mZ2TE2HZ+er65iL/RmZh2bnq/22M/Vfz34/vR8+Tyfv54C8J1Nr6fba8fXVzp77Ndb/XwBgONZg7/e7vfYr3/GutEDHNP0e2v5dH2zx357OAPguFLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6vsf+5eZ2f/h5Pn99CsCRTL+3lk/XN3vsX+/u9wPvT89fnwJwJNPvreXT9c0e+7eHx/3AFnw3fIBjmF6voZ9N1zd77Md6uzczs+NuvdWPq9h/nE6Cb2Z28E3Hp+erq9hv5uo/h9c/bc3M7Ptuej3dXl/drGLsAWhyufwDYhxukRpltscAAAAASUVORK5CYII=" InformativeScreenshot="c1b756352ca04b9ca2d3264ec3d5a4fe.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='Chrome_WidgetWin_1' title='ITR2 Preview and Submit your return' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                  <uix:NGetText DelayAfter="1" DelayBefore="1" DisplayName="Get Text 'editable text Place*'" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e3f1194f-672c-4080-a333-627115a544be" TextString="[StrPlace]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="146, 644, 375, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'editable text Place*'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl name='Place*' role='editable text' aastate='focusable, editable, opaque, selectable text, singleline, autocomplete' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl name='Place*' role='editable text' aastate='focusable, editable, opaque, selectable text, singleline, autocomplete' automationid='' /&gt;" Guid="c846ca7d-762b-47dd-b3e6-135cd171acdb" ImageBase64="" InformativeScreenshot="59fe82597e267a314c85fa5d9145549b.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='Chrome_WidgetWin_1' title='ITR2 Preview and Submit your return' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                         <uix:TargetAnchorable.Anchors>
                           <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CvTextArgument="Place *" CvType="Text" DesignTimeRectangle="146, 451, 67, 32" ElementType="InputBox" FriendlyName="'Place*'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl idx='9' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl automationid='' role='editable text' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAkCAYAAADb0CfrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQqSURBVGhD7ZjNSxxJGIfzp8TDBkKEZUB2YPEi4kKMLAgiigcVEUWDBBVBVIwfqBgPorhGohKCFw/ix0EFyagkqGHVTUKimFk9qJhBVCaO7uBH5s383ukauis9lZ1152BSDxRtV79V0/V0Vb2FN0gTES1HgZajQMtRoOUo0HIUaDkKtBwFWo4CLUeBlqPgynKOjo4oNzeXampqyO/3G7XfBxY5y8vLFBcXZ1vS0tKot7eXDg8PjegQ11nOP2vr9MbhpE/zL4waK7Zy8vPzWYQoXV1dlJOTw89SU1NpZWXFaPEDyoEMmUAgQLOzs5SYmEilpaXk9Xq5/rrJ8f25TB+7/6CzvT2W8zbhVzp+uUDnHz20//QZ+ZZeGZFRyAGXl5fU1tZG8fHxtLq6ynXXTY7n8RP66/bPtHLzVnDW/EKrP93hK+5Rv9v2iOjzZ46NSg4YGxvjGFxBJDkQOT8/z7PM4XBwGyzN6elpfiZzenpKQ0NDlJWVxbGYoU1NTbQX/MIyZ2dnNDU1FV7qInZnZ8eI+AbBwfs/uGkjI4ulfMjJI7/7bwpcXBgBIaKWMzIywjEzMzN8bycHg8dehbiCggLq6enhgr9R19fXZxGEPiorK3lGlpWVcdvm5maWmp6eTm6324gMSWxsbLTEtrS0sCA5VoX3uYv3m62ycnp9x8H3MlHJwYtVV1dTUlISra+vc52dnI2NDSosLOQXN0vw+XxUUVFBGRkZtLu7y3XYywYHB3mwo6OjwY8amtIAG39KSgo1NDTwbAGYsU6nk1wuF7cVQAqShTk2Eqfv3tNbZyJt1z2ky+A7bd1/QGu/3eN9yMy/lnNwcEAdHR38vL6+Piwi2j0HfWMQm5ubfI/2eXl5VFxcHN7kBRDb3t5O2dnZ5PF46Pj4mEpKSqi8vJxOTk6MqBByrAqvay64pLLDMvybW7R293euN2MrR1WqqqosZ51IcvD15ubmLHuOKGY5uOIeAzPPMjtErLkvuZj7VhG4sP6WfA9s5cjnHJTh4WH+UfO0B3ZycMUGiaVSW1vLS2BxcZELlqWdHNU+JxCxdu8nysDAAO3v7xstrkbUG7KMnRz0AzH9/f2WfQHIy0oMuLOz86tYGREL8efn50Zt7IiJHJHu0Z8ZDB4SzHJUew7iMROQlZCmRSyy0vb2thEVO2IiB2ke/XR3d4f3EQx0YWGBU65ZDupFthofH7fMHmQ9iBAZSMSi79bWVs6eAiz3iYkJmpyc/Grp/1diIgcbNmYC+sJBDVkOVwhISEjgevOsQjwyEJ7LZxekfSESQEhdXR33kZmZye8qzlBoL5+hrkJM5AAMGFIwQLx0UVERLS0t8dfFb4gTtkA+IScnJ7Mk+b8AQD4hIxsiK2Jm/l+zBljkaKxoOQq0HAVajgItR4GWo0DLUaDlKNByIkL0BbRYhS8KKrlpAAAAAElFTkSuQmCC" SearchSteps="Selector" />
+                            <uix:Target DesignTimeRectangle="146, 601, 67, 32" ElementType="InputBox" FriendlyName="'Place*'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl role='editable text' aastate='opaque' text='Place*' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl role='editable text' aastate='opaque' text='Place*' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAkCAYAAADb0CfrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQqSURBVGhD7ZjNSxxJGIfzp8TDBkKEZUB2YPEi4kKMLAgiigcVEUWDBBVBVIwfqBgPorhGohKCFw/ix0EFyagkqGHVTUKimFk9qJhBVCaO7uBH5s383ukauis9lZ1152BSDxRtV79V0/V0Vb2FN0gTES1HgZajQMtRoOUo0HIUaDkKtBwFWo4CLUeBlqPgynKOjo4oNzeXampqyO/3G7XfBxY5y8vLFBcXZ1vS0tKot7eXDg8PjegQ11nOP2vr9MbhpE/zL4waK7Zy8vPzWYQoXV1dlJOTw89SU1NpZWXFaPEDyoEMmUAgQLOzs5SYmEilpaXk9Xq5/rrJ8f25TB+7/6CzvT2W8zbhVzp+uUDnHz20//QZ+ZZeGZFRyAGXl5fU1tZG8fHxtLq6ynXXTY7n8RP66/bPtHLzVnDW/EKrP93hK+5Rv9v2iOjzZ46NSg4YGxvjGFxBJDkQOT8/z7PM4XBwGyzN6elpfiZzenpKQ0NDlJWVxbGYoU1NTbQX/MIyZ2dnNDU1FV7qInZnZ8eI+AbBwfs/uGkjI4ulfMjJI7/7bwpcXBgBIaKWMzIywjEzMzN8bycHg8dehbiCggLq6enhgr9R19fXZxGEPiorK3lGlpWVcdvm5maWmp6eTm6324gMSWxsbLTEtrS0sCA5VoX3uYv3m62ycnp9x8H3MlHJwYtVV1dTUlISra+vc52dnI2NDSosLOQXN0vw+XxUUVFBGRkZtLu7y3XYywYHB3mwo6OjwY8amtIAG39KSgo1NDTwbAGYsU6nk1wuF7cVQAqShTk2Eqfv3tNbZyJt1z2ky+A7bd1/QGu/3eN9yMy/lnNwcEAdHR38vL6+Piwi2j0HfWMQm5ubfI/2eXl5VFxcHN7kBRDb3t5O2dnZ5PF46Pj4mEpKSqi8vJxOTk6MqBByrAqvay64pLLDMvybW7R293euN2MrR1WqqqosZ51IcvD15ubmLHuOKGY5uOIeAzPPMjtErLkvuZj7VhG4sP6WfA9s5cjnHJTh4WH+UfO0B3ZycMUGiaVSW1vLS2BxcZELlqWdHNU+JxCxdu8nysDAAO3v7xstrkbUG7KMnRz0AzH9/f2WfQHIy0oMuLOz86tYGREL8efn50Zt7IiJHJHu0Z8ZDB4SzHJUew7iMROQlZCmRSyy0vb2thEVO2IiB2ke/XR3d4f3EQx0YWGBU65ZDupFthofH7fMHmQ9iBAZSMSi79bWVs6eAiz3iYkJmpyc/Grp/1diIgcbNmYC+sJBDVkOVwhISEjgevOsQjwyEJ7LZxekfSESQEhdXR33kZmZye8qzlBoL5+hrkJM5AAMGFIwQLx0UVERLS0t8dfFb4gTtkA+IScnJ7Mk+b8AQD4hIxsiK2Jm/l+zBljkaKxoOQq0HAVajgItR4GWo0DLUaDlKNByIkL0BbRYhS8KKrlpAAAAAElFTkSuQmCC" SearchSteps="Selector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
-                    </uix:NTypeInto.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NTypeInto>
-                </Sequence>
-              </If.Then>
-              <If.Else>
-                <Sequence sap:VirtualizedContainerService.HintSize="300,141.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_71">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Place in JSON Log Message" sap:VirtualizedContainerService.HintSize="258,54" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Place is taken from JSON file&quot;]">
+                    </uix:NGetText.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                  </ui:LogMessage>
+                  </uix:NGetText>
+                  <If Condition="[string.IsNullOrEmpty(StrPlace) = true]" DisplayName=" If Place Empty" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="If_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="364.6666666666667,141.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="0.3" DelayBefore="0.3" DisplayName="Verification Type Into 'editable text Place*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="322.6666666666667,54" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="e3f1194f-672c-4080-a333-627115a544be" Text="Bengaluru" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="146, 494, 375, 61" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'editable text Place*'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl name='Place*' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl name='Place*' role='editable text' automationid='' /&gt;" Guid="4e33540d-04ae-4097-bccd-98917ce330f4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAABBCAYAAAAwqAR0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJGSURBVHhe7dkxSiRRGIXRWcokTuJaTNydYCS4nDE17kyMOzCRHv7BKl7DXYB1PQdu0vW6w49H9a8LAPXEHuAHEHuAH0DsAX6AGPu3h8fL69395eXm9vL39x8zM/vmm15Pt6ffyVXsP06n/4fTD5mZ2TE2HZ+er65iL/RmZh2bnq/22M/Vfz34/vR8+Tyfv54C8J1Nr6fba8fXVzp77Ndb/XwBgONZg7/e7vfYr3/GutEDHNP0e2v5dH2zx357OAPguFLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6LvYAZVLPxR6gTOq52AOUST0Xe4AyqediD1Am9VzsAcqknos9QJnUc7EHKJN6vsf+5eZ2f/h5Pn99CsCRTL+3lk/XN3vsX+/u9wPvT89fnwJwJNPvreXT9c0e+7eHx/3AFnw3fIBjmF6voZ9N1zd77Md6uzczs+NuvdWPq9h/nE6Cb2Z28E3Hp+erq9hv5uo/h9c/bc3M7Ptuej3dXl/drGLsAWhyufwDYhxukRpltscAAAAASUVORK5CYII=" InformativeScreenshot="c1b756352ca04b9ca2d3264ec3d5a4fe.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='Chrome_WidgetWin_1' title='ITR2 Preview and Submit your return' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="Place *" CvType="Text" DesignTimeRectangle="146, 451, 67, 32" ElementType="InputBox" FriendlyName="'Place*'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl idx='9' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview and Submit your return' role='document' /&gt;&lt;ctrl automationid='' role='editable text' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAkCAYAAADb0CfrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQqSURBVGhD7ZjNSxxJGIfzp8TDBkKEZUB2YPEi4kKMLAgiigcVEUWDBBVBVIwfqBgPorhGohKCFw/ix0EFyagkqGHVTUKimFk9qJhBVCaO7uBH5s383ukauis9lZ1152BSDxRtV79V0/V0Vb2FN0gTES1HgZajQMtRoOUo0HIUaDkKtBwFWo4CLUeBlqPgynKOjo4oNzeXampqyO/3G7XfBxY5y8vLFBcXZ1vS0tKot7eXDg8PjegQ11nOP2vr9MbhpE/zL4waK7Zy8vPzWYQoXV1dlJOTw89SU1NpZWXFaPEDyoEMmUAgQLOzs5SYmEilpaXk9Xq5/rrJ8f25TB+7/6CzvT2W8zbhVzp+uUDnHz20//QZ+ZZeGZFRyAGXl5fU1tZG8fHxtLq6ynXXTY7n8RP66/bPtHLzVnDW/EKrP93hK+5Rv9v2iOjzZ46NSg4YGxvjGFxBJDkQOT8/z7PM4XBwGyzN6elpfiZzenpKQ0NDlJWVxbGYoU1NTbQX/MIyZ2dnNDU1FV7qInZnZ8eI+AbBwfs/uGkjI4ulfMjJI7/7bwpcXBgBIaKWMzIywjEzMzN8bycHg8dehbiCggLq6enhgr9R19fXZxGEPiorK3lGlpWVcdvm5maWmp6eTm6324gMSWxsbLTEtrS0sCA5VoX3uYv3m62ycnp9x8H3MlHJwYtVV1dTUlISra+vc52dnI2NDSosLOQXN0vw+XxUUVFBGRkZtLu7y3XYywYHB3mwo6OjwY8amtIAG39KSgo1NDTwbAGYsU6nk1wuF7cVQAqShTk2Eqfv3tNbZyJt1z2ky+A7bd1/QGu/3eN9yMy/lnNwcEAdHR38vL6+Piwi2j0HfWMQm5ubfI/2eXl5VFxcHN7kBRDb3t5O2dnZ5PF46Pj4mEpKSqi8vJxOTk6MqBByrAqvay64pLLDMvybW7R293euN2MrR1WqqqosZ51IcvD15ubmLHuOKGY5uOIeAzPPMjtErLkvuZj7VhG4sP6WfA9s5cjnHJTh4WH+UfO0B3ZycMUGiaVSW1vLS2BxcZELlqWdHNU+JxCxdu8nysDAAO3v7xstrkbUG7KMnRz0AzH9/f2WfQHIy0oMuLOz86tYGREL8efn50Zt7IiJHJHu0Z8ZDB4SzHJUew7iMROQlZCmRSyy0vb2thEVO2IiB2ke/XR3d4f3EQx0YWGBU65ZDupFthofH7fMHmQ9iBAZSMSi79bWVs6eAiz3iYkJmpyc/Grp/1diIgcbNmYC+sJBDVkOVwhISEjgevOsQjwyEJ7LZxekfSESQEhdXR33kZmZye8qzlBoL5+hrkJM5AAMGFIwQLx0UVERLS0t8dfFb4gTtkA+IScnJ7Mk+b8AQD4hIxsiK2Jm/l+zBljkaKxoOQq0HAVajgItR4GWo0DLUaDlKNByIkL0BbRYhS8KKrlpAAAAAElFTkSuQmCC" SearchSteps="Selector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NTypeInto>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,234.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Place in JSON Log Message" sap:VirtualizedContainerService.HintSize="334,147.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Place is taken from JSON file&quot;]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                      </Sequence>
+                    </If.Else>
+                  </If>
                 </Sequence>
-              </If.Else>
-            </If>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
             <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0.5" DelayBefore="0.5" DisplayName="Verification  end page Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,185.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_12" Shortcuts="[d(hk)][k(end)][u(hk)]" Version="V3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
