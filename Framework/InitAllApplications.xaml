@@ -170,7 +170,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="ITDe Maximize Window" sap:VirtualizedContainerService.HintSize="954,25.333333333333332" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
             <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="1" DelayBefore="4" DelayBetweenShortcuts="1" DisplayName="Firstpage enter Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="954,185.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Enter)][u(hk)][d(hk)][k(Enter)][u(hk)][d(hk)][k(Enter)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3" />
-            <uix:NCheckState DelayBefore="1" DisplayName="Check App State 'Continue'" sap:VirtualizedContainerService.HintSize="954,496.6666666666667" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="691da253-5b04-4fe4-a062-7a318b73d182" Timeout="10" Version="V3">
+            <uix:NCheckState DelayBefore="1" DisplayName="Check App State 'Continue'" sap:VirtualizedContainerService.HintSize="954,496.6666666666667" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="691da253-5b04-4fe4-a062-7a318b73d182" Timeout="12" Version="V3">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Try Click 'Continue'  Target appears" sap:VirtualizedContainerService.HintSize="450,275.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_14">
                   <sap:WorkflowViewStateService.ViewState>
