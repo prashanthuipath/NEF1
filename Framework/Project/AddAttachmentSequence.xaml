@@ -4,7 +4,7 @@
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_UiElementOutput" Type="InArgument(ui:UiElement)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>565.3333333333334,1670.6666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>577.3333333333334,1670.6666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -110,7 +110,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Add json attachment for the process&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Add AttachmentUse Application:" sap:VirtualizedContainerService.HintSize="484,1310.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InUiElement="[in_UiElementOutput]" ScopeGuid="c9e038a9-c366-46e0-8030-ccd197fb38b0" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Add Attachment Use Application:" sap:VirtualizedContainerService.HintSize="484,1310.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InUiElement="[in_UiElementOutput]" ScopeGuid="c9e038a9-c366-46e0-8030-ccd197fb38b0" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
