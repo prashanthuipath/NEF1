@@ -121,7 +121,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="1050,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
-    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Processed Folder" sap:VirtualizedContainerService.HintSize="1050,82" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[in_Config(&quot;Processed_File_Path&quot;).ToString()+Datetime.Today.ToString(&quot;dd-MM-yyyy&quot;)+&quot;_Completed&quot;]" />
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Processed Folder" sap:VirtualizedContainerService.HintSize="1050,82" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[in_Config(&quot;Processed_File_Path&quot;).ToString().Trim+Datetime.Today.ToString(&quot;dd-MM-yyyy&quot;)+&quot;_Completed&quot;]" />
     <ui:CommentOut DisplayName="Manual FolderComment Out" sap:VirtualizedContainerService.HintSize="1050,54" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,192.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_13">
@@ -145,7 +145,7 @@
         <OutArgument x:TypeArguments="x:String">[ApplicationPath]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[in_Config("Utility_Path").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String">[in_Config("Utility_Path").ToString().Trim]</InArgument>
       </Assign.Value>
     </Assign>
     <Assign DisplayName="Application path Assign str replace" sap:VirtualizedContainerService.HintSize="1050,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">

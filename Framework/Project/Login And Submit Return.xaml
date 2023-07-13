@@ -4,7 +4,7 @@
     <x:Property Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1102,6180</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1102,6390.666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -108,20 +108,20 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login and submit Sequence" sap:VirtualizedContainerService.HintSize="1112,6115.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_71">
+  <Sequence DisplayName="Login and submit Sequence" sap:VirtualizedContainerService.HintSize="1112,6326" sap2010:WorkflowViewState.IdRef="Sequence_71">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Login and submit Sequence Log Message" sap:VirtualizedContainerService.HintSize="1050,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Entered Login page&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Login and submit Sequence Use Application/Browser" sap:VirtualizedContainerService.HintSize="1050,5820" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" InUiElement="[in_UiElementOutput]" ScopeGuid="fd3a6dd9-d107-4fb3-9f45-80d90dce2791" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Login and submit Sequence Use Application/Browser" sap:VirtualizedContainerService.HintSize="1050,6030.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" InUiElement="[in_UiElementOutput]" ScopeGuid="fd3a6dd9-d107-4fb3-9f45-80d90dce2791" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Login and submit Do" sap:VirtualizedContainerService.HintSize="1016,5680.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_69">
+          <Sequence DisplayName="Login and submit Do" sap:VirtualizedContainerService.HintSize="1016,5891.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_69">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="BoolProcessedFileExist" />
               <Variable x:TypeArguments="x:Boolean" Name="BoolContinueFound" />
@@ -354,7 +354,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Upload Click 'OK'" sap:VirtualizedContainerService.HintSize="954,54" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd3a6dd9-d107-4fb3-9f45-80d90dce2791" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Upload Click 'OK'" sap:VirtualizedContainerService.HintSize="954,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd3a6dd9-d107-4fb3-9f45-80d90dce2791" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CvElementArea="1136, 647, 131, 61" CvTextArea="1185, 666, 33, 21" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1138, 649, 127, 55" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;ctrl name='ITR2 Preview &amp;amp; Submit Your Return Validation- Error list' role='document' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ITR2 Preview &amp;amp; Submit Your Return Validation- Error list' role='document' /&gt;&lt;ctrl name='OK' role='push button' automationid='' check:text='OK' /&gt;" Guid="8a02ce50-4a78-4f24-b832-8ea96d3d9f72" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIMAAAA7CAYAAABYBDl+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQ/SURBVHhe7Z3Nb1RVGMbn7yGRHRsTTEzcABpZgRpYuDIs3BhN2GiQGDCaCmiIUiop0QBRY9AolQjGqLS1DNBaCm1nmHHaGZiZzpR+UPrd13mO3tfTuadqyCycd56T/JL2no/N85tzzr23PZOYvP9QCAGUgSgbylCdnCOGCWUek0E7VB9I5S8mKrPEAFGeyDYkhcoQVUbhv9/+i+zce1o2P3FENj3eRgyALJEpso3k8KVwMrgLzppZ6R/Muw6hwYgdkDGyRubRTJGIzIAppfJ0rVFnsDOxB7JG5sheZYAduHj0o5+CnYhdkDmyhwMJrBvliRm5V5yUZ/dwVmg1kDmyhwMJTBHF0pTkCxPcLLYgyBzZw4FENCvkxorBxsQ+yB4OJLBeFO5WJZu9G2xI7IPs4YCTAdPEnUw+2JDYB9nDgQTWivF8WdLp8WBDYh9kDwecDGPjZUmlx4INiX2QPRygDCQuw2iKMrQqyJ4yEAdlIAplIAplIAplIAplIEpLyPDkznb5+rtbMjU9L2tr4srC4rLcGinJ64cuxtrvP9glD+YWXbt0thKrf/Od72VmdsHVY5wTp3tjbZoR8zK89MqXUrg37YILlZWVVTl/YWhdn3+SAeMVSzOubmV1Lda3mTEtwzMvdMpIquyCw4yAn98+9qMLGyFu9OneSIb68br7crLlqQ+0vtkxLUPHJ32yvLzqwrs+UIgFd/DdSypEJjcp23efctdDMqAvwo+WGUgBOfzxmh3TMgwNl1xwD+eX5K22y8E2yf68azO/sCxtx//828+QDJhJsCygYJnAcuGPYwGzMrz48udSLM9qeHv3nQu2O/PFDVmthYxP/GfnB9y1ehmwhGApQcFMgg1k/TgWMCvDawe+1SWgfhPo8+GpHllaWnHtfvg57a75MlSqczoO2nV82hcbwwpmZdhoE1iPL0PP1Zy75vetLzdvF01tGn04M/zLzICCvUL0u7XbSR+zMjRqzxCF7z9osrpvMCsDaMTdROb3qi4L/h1FKlPhrWUz0cjnDAD1w95Dp67LI1pnAdMyNPoJJHj1jW/cOw4U9Dv+cfe6+mbGtAyg0e8mQOfZpM44lh5AmZcB4K0lAsd/mkePkxdrdxAj6YlHemuJ5aY3mXP1GM/KO4qWkIH8NygDUSgDUSgDUSgDUSgDUSgDUSgDUSgDUSgDUSgDUSgDUSgDUSgDUWIy4JCnzVt5XHCrgcyDp709/XxHsAOxCzJfJ0N0KOihtq5gB2IXZK6HgvrHBQ8NpWXHcyeDnYg9kDUy1+OC/YPEbw9n5OKlpGzf3R7sTOyAjJE1MteDxP2vGBhN5WTw5qhcuzYoBw5/Jdt2nZDHtr4XHIw0H8gSmSJbZIyskbl+xYD/5SOZbKFmSlYGfht2jX/t65ee3uvS3ZOUK93g6t9cIf9r/Kxq2SFDZIlMkS0yRtbIHNkXS1PyBxPRyO+HgRC3AAAAAElFTkSuQmCC" InformativeScreenshot="ea5f1c7b62d42fb6d94953c7ee5c4550.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='Chrome_WidgetWin_1' title='ITR2 Preview &amp;amp; Submit Your Return Validation- Error list' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
@@ -366,7 +366,7 @@
               </uix:NClick.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -379,7 +379,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NMouseScroll>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Login and submit Sequence Verify Later" sap:VirtualizedContainerService.HintSize="954,54" sap2010:WorkflowViewState.IdRef="NClick_37" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd3a6dd9-d107-4fb3-9f45-80d90dce2791" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="2" DisplayName="Login and submit Sequence Verify Later" sap:VirtualizedContainerService.HintSize="954,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_37" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fd3a6dd9-d107-4fb3-9f45-80d90dce2791" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CvType="RadioButton" DesignTimeRectangle="132, 610, 33, 34" DesignTimeScaleFactor="1.5" ElementType="RadioButton" FriendlyName="'e-Verify Later'" Guid="d363fcc7-9f02-4575-b9ab-24a7169b2252" InformativeScreenshot="96e3c04978771227bcc2a040a0967936.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='Chrome_WidgetWin_1' title='Complete Ur Verification ITR2' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
@@ -391,7 +391,7 @@
               </uix:NClick.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
