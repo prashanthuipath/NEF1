@@ -3,8 +3,9 @@
     <x:Property Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_UiElementOutput" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="io_StrScreenName" Type="InOutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>720,3321.3333333333335</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>720,3446.6666666666665</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,27 +112,27 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Total Income Page Sequence" sap:VirtualizedContainerService.HintSize="730,3256.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_64">
+  <Sequence DisplayName="Total Income Page Sequence" sap:VirtualizedContainerService.HintSize="730,3382" sap2010:WorkflowViewState.IdRef="Sequence_64">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="CheckTotalIncome Log Message" sap:VirtualizedContainerService.HintSize="668,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Entering NetIncome page&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Total Income Use Application/Browser" sap:VirtualizedContainerService.HintSize="668,2776.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InUiElement="[in_UiElementOutput]" ScopeGuid="31476e3a-c9e5-413a-8a35-8eefeed47e77" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Total Income Use Application/Browser" sap:VirtualizedContainerService.HintSize="668,2902" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InUiElement="[in_UiElementOutput]" ScopeGuid="31476e3a-c9e5-413a-8a35-8eefeed47e77" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Total Income Do" sap:VirtualizedContainerService.HintSize="634,2637.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_63">
+          <Sequence DisplayName="Total Income Do" sap:VirtualizedContainerService.HintSize="634,2762.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_63">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Check Total Income Sequence" sap:VirtualizedContainerService.HintSize="572,2096.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_51">
+            <Sequence DisplayName="Check Total Income Sequence" sap:VirtualizedContainerService.HintSize="572,2222" sap2010:WorkflowViewState.IdRef="Sequence_51">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="ITTotalIncome" />
                 <Variable x:TypeArguments="x:Int32" Name="IntTotalIncome" />
@@ -144,6 +145,14 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
+              <Assign DisplayName="total income screenshot Assign" sap:VirtualizedContainerService.HintSize="510,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_57">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[io_StrScreenName]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">TotalIncomeScreen</InArgument>
+                </Assign.Value>
+              </Assign>
               <uix:NMouseScroll KeyModifiers="{x:Null}" DelayAfter="1" DelayBefore="1" Direction="Down" DisplayName="TOTALINCOME Mouse Scroll" sap:VirtualizedContainerService.HintSize="510,139.33333333333334" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="7" ScopeIdentifier="31476e3a-c9e5-413a-8a35-8eefeed47e77" Version="V3" />
               <uix:NGetText DelayAfter="1" DelayBefore="1" DisplayName="Get Text '₹ 34,65,901'" sap:VirtualizedContainerService.HintSize="510,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="31476e3a-c9e5-413a-8a35-8eefeed47e77" TextString="[ITTotalIncome]" Version="V3">
                 <uix:NGetText.Target>

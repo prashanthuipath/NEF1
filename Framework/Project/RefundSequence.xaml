@@ -3,8 +3,9 @@
     <x:Property Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_UiElementOutput" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="io_StrScreenName" Type="InOutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>658,2145.3333333333335</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>658,2270.6666666666665</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,20 +112,20 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Refund " sap:VirtualizedContainerService.HintSize="668,2080.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_66">
+  <Sequence DisplayName="Refund " sap:VirtualizedContainerService.HintSize="668,2206" sap2010:WorkflowViewState.IdRef="Sequence_66">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Refund  Log Message" sap:VirtualizedContainerService.HintSize="606,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Entering Refund page..&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Refund  Use Application/Browser" sap:VirtualizedContainerService.HintSize="606,1600.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InUiElement="[in_UiElementOutput]" ScopeGuid="11521f4c-1821-4d99-b655-8d7060e00c15" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Refund  Use Application/Browser" sap:VirtualizedContainerService.HintSize="606,1726" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InUiElement="[in_UiElementOutput]" ScopeGuid="11521f4c-1821-4d99-b655-8d7060e00c15" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Refund Do In Sequence" sap:VirtualizedContainerService.HintSize="572,1461.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_67">
+          <Sequence DisplayName="Refund Do In Sequence" sap:VirtualizedContainerService.HintSize="572,1586.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_67">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="ITRefund" />
               <Variable x:TypeArguments="x:Int32" Name="IntRefund" />
@@ -135,6 +136,14 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="&quot;RefundScreen&quot; 1Assign" sap:VirtualizedContainerService.HintSize="510,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_53">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[io_StrScreenName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">RefundScreen</InArgument>
+              </Assign.Value>
+            </Assign>
             <uix:NMouseScroll KeyModifiers="{x:Null}" DelayAfter="1" DelayBefore="1" Direction="Down" DisplayName="Mouse Scroll Refund " sap:VirtualizedContainerService.HintSize="510,54" sap2010:WorkflowViewState.IdRef="NMouseScroll_5" InteractionMode="HardwareEvents" MovementUnits="7" ScopeIdentifier="11521f4c-1821-4d99-b655-8d7060e00c15" Version="V3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">

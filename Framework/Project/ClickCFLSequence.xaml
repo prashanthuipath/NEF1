@@ -1,8 +1,9 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Click_CFL_Sequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_UiElementOutput" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="io_StrScreenName" Type="InOutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>565.3333333333334,2202</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>585.3333333333334,2327.3333333333335</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -101,26 +102,34 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="546,2137.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_46">
+  <Sequence sap:VirtualizedContainerService.HintSize="592,2262.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_46">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Entering CFL Page...&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="CFL Use App" sap:VirtualizedContainerService.HintSize="484,1842" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InUiElement="[in_UiElementOutput]" ScopeGuid="2f52841b-67d5-4833-af9c-fe0e53fc0df1" Version="V2">
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="530,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Entering CFL Page...&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="CFL Use App" sap:VirtualizedContainerService.HintSize="530,1967.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InUiElement="[in_UiElementOutput]" ScopeGuid="2f52841b-67d5-4833-af9c-fe0e53fc0df1" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="CFL Do" sap:VirtualizedContainerService.HintSize="450,1702.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_45">
+          <Sequence DisplayName="CFL Do" sap:VirtualizedContainerService.HintSize="496,1828" sap2010:WorkflowViewState.IdRef="Sequence_45">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="1" DelayBefore="1" DisplayName="CFL Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,185.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(end)][u(hk)]" Version="V3">
+            <Assign DisplayName="ScheduleCFLScreen assign" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[io_StrScreenName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">ScheduleCFLScreen</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="1" DelayBefore="1" DisplayName="CFL Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,185.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(end)][u(hk)]" Version="V3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>

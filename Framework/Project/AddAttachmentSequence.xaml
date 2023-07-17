@@ -3,8 +3,9 @@
     <x:Property Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_UiElementOutput" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="io_StrScreenName" Type="InOutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>577.3333333333334,1670.6666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>585.3333333333334,1796</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -103,27 +104,35 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="546,1606" sap2010:WorkflowViewState.IdRef="Sequence_45">
+  <Sequence sap:VirtualizedContainerService.HintSize="592,1731.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_45">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Add json attachment for the process&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Add Attachment Use Application:" sap:VirtualizedContainerService.HintSize="484,1310.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InUiElement="[in_UiElementOutput]" ScopeGuid="c9e038a9-c366-46e0-8030-ccd197fb38b0" Version="V2">
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="530,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Add json attachment for the process&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Add Attachment Use Application:" sap:VirtualizedContainerService.HintSize="530,1436" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InUiElement="[in_UiElementOutput]" ScopeGuid="c9e038a9-c366-46e0-8030-ccd197fb38b0" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Add Attachment Do" sap:VirtualizedContainerService.HintSize="450,1171.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_44">
+          <Sequence DisplayName="Add Attachment Do" sap:VirtualizedContainerService.HintSize="496,1296.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_44">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Add Attachment Click 'Attach File'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9e038a9-c366-46e0-8030-ccd197fb38b0" Version="V3">
+            <Assign DisplayName="add attachment screen shot Assign" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[io_StrScreenName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">AddAttachmentScreen</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Add Attachment Click 'Attach File'" sap:VirtualizedContainerService.HintSize="434,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9e038a9-c366-46e0-8030-ccd197fb38b0" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CvElementArea="134, 583, 195, 56" CvTextArea="191, 600, 105, 21" CvTextArgument="Attach File" CvType="Button" DesignTimeRectangle="134, 584, 193, 55" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Attach File'" FullSelectorArgument="&lt;ctrl name='e-Filing, Income Tax Department, Government of India' role='document' /&gt;&lt;ctrl name='Attach File' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='e-Filing, Income Tax Department, Government of India' role='document' /&gt;&lt;ctrl name='Attach File' role='push button' automationid='' check:text='Attach File' /&gt;" Guid="e17ea932-b7b0-4e46-9f66-985379b6ffa1" ImageBase64="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" InformativeScreenshot="f58495e88dfc8049266ffe3b1629db94.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='Chrome_WidgetWin_1' title='e-Filing, Income Tax Department, Government of India' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
@@ -134,7 +143,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NSetText DelayAfter="1" DelayBefore="1" DisplayName="Add Attachment Set Text 'Edit'" sap:VirtualizedContainerService.HintSize="388,164" sap2010:WorkflowViewState.IdRef="NSetText_3" ScopeIdentifier="c9e038a9-c366-46e0-8030-ccd197fb38b0" Text="[in_Config(&quot;Json_Folder&quot;).ToString()+in_TransactionItem.SpecificContent(&quot;FileName&quot;).ToString()]" Version="V3">
+            <uix:NSetText DelayAfter="1" DelayBefore="1" DisplayName="Add Attachment Set Text 'Edit'" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="NSetText_3" ScopeIdentifier="c9e038a9-c366-46e0-8030-ccd197fb38b0" Text="[in_Config(&quot;Json_Folder&quot;).ToString()+in_TransactionItem.SpecificContent(&quot;FileName&quot;).ToString()]" Version="V3">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="287, 615, 307, 25" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="dfb4ef50-f822-4c54-a2fb-2b018603b5c8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATcAAAAdCAYAAADPYivWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAB3SURBVHhe7dRBEQAwEAOh8286/VXEDojgBhAkNyDp53bnOaBDbkCS3IAkuQFJcgOS5AYkyQ1IkhuQJDcgSW5AktyAJLkBSXIDkuQGJMkNSJIbkCQ3IEluQJLcgCS5AUlyA5LkBiTJDUiSG5AkNyDJaECS3ICg7QE2sxyUFKbuhQAAAABJRU5ErkJggg==" InformativeScreenshot="3ba18c3924c65cd821c03a5469ad4a35.png" ScopeSelectorArgument="&lt;wnd app='itde-filing-2023.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
