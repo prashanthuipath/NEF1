@@ -122,7 +122,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Login and submit Do" sap:VirtualizedContainerService.HintSize="1016,7159.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_69">
+          <Sequence DisplayName="Login and submit Do Sequence" sap:VirtualizedContainerService.HintSize="1016,7154" sap2010:WorkflowViewState.IdRef="Sequence_69">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="BoolProcessedFileExist" />
               <Variable x:TypeArguments="x:Boolean" Name="BoolContinueFound" />
